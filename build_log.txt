@@ -1,0 +1,88 @@
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  cli_util 0.4.2 (0.5.1 available)
+  code_assets 1.0.0 (1.2.1 available)
+  file_saver 0.2.14 (0.4.0 available)
+  flutter_lints 4.0.0 (6.0.0 available)
+  flutter_plugin_android_lifecycle 2.0.34 (2.0.35 available)
+  flutter_riverpod 2.6.1 (3.3.2 available)
+  flutter_secure_storage 10.0.0 (10.3.1 available)
+  flutter_secure_storage_darwin 0.2.0 (0.4.0 available)
+  flutter_secure_storage_linux 3.0.0 (3.0.1 available)
+  flutter_secure_storage_web 2.1.0 (2.1.1 available)
+  flutter_secure_storage_windows 4.1.0 (4.2.2 available)
+  go_router 14.8.1 (17.3.0 available)
+  hooks 1.0.2 (2.0.2 available)
+  image 4.8.0 (4.9.1 available)
+  image_picker 1.2.1 (1.2.2 available)
+  image_picker_android 0.8.13+15 (0.8.13+19 available)
+  intl 0.19.0 (0.20.2 available)
+  json_annotation 4.11.0 (4.12.0 available)
+  lints 4.0.0 (6.1.0 available)
+  matcher 0.12.17 (0.12.20 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.17.0 (1.18.3 available)
+  mime 1.0.6 (2.0.0 available)
+  mobile_scanner 5.2.3 (7.2.0 available)
+  native_toolchain_c 0.17.6 (0.19.1 available)
+  objective_c 9.3.0 (9.4.1 available)
+  package_info_plus 8.3.1 (10.1.0 available)
+  package_info_plus_platform_interface 3.2.1 (4.1.0 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_android 2.2.23 (2.3.1 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  permission_handler 11.4.0 (12.0.3 available)
+  permission_handler_android 12.1.0 (13.0.1 available)
+  permission_handler_apple 9.4.7 (9.4.10 available)
+  riverpod 2.6.1 (3.3.2 available)
+  share_plus 12.0.1 (13.1.0 available)
+  share_plus_platform_interface 6.1.0 (7.1.0 available)
+  shared_preferences_android 2.4.23 (2.4.26 available)
+  sqflite 2.4.2 (2.4.3 available)
+  sqflite_android 2.4.2+3 (2.4.3 available)
+  sqflite_common 2.5.6 (2.5.11 available)
+  sqflite_darwin 2.4.2 (2.4.3 available)
+  sqflite_platform_interface 2.4.0 (2.4.1 available)
+  syncfusion_flutter_charts 32.2.9 (33.2.13+1 available)
+  syncfusion_flutter_core 32.2.9 (33.2.13+1 available)
+  syncfusion_flutter_datepicker 32.2.9 (33.2.13+1 available)
+  syncfusion_flutter_maps 32.2.9 (33.2.13+1 available)
+  synchronized 3.4.0 (3.4.1 available)
+  test_api 0.7.7 (0.7.12 available)
+  url_launcher_web 2.4.2 (2.4.3 available)
+  vector_math 2.2.0 (2.4.0 available)
+  video_player_android 2.9.5 (2.9.6 available)
+  video_player_avfoundation 2.9.4 (2.9.7 available)
+  video_player_platform_interface 6.6.0 (6.7.0 available)
+  vm_service 15.0.2 (15.2.0 available)
+  win32 5.15.0 (6.3.0 available)
+  xml 6.6.1 (7.0.1 available)
+Got dependencies!
+58 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Archiving com.originaltaste.app...
+Automatically signing iOS for device deployment using specified development team in Xcode project: Q97628QVUQ
+Running pod install...                                             953ms
+Running Xcode build...                                          
+Xcode archive done.                                         51.3s
+✓ Built build/ios/archive/Runner.xcarchive (210.9MB)
+
+[✓] App Settings Validation
+    • Version Number: 1.0.2
+    • Build Number: 81
+    • Display Name: Original Taste
+    • Deployment Target: 13.0
+    • Bundle Identifier: com.originaltaste.app
+
+[!] App Icon and Launch Image Assets Validation
+    ! Launch image is set to the default placeholder icon. Replace with unique launch image.
+
+To update the settings, please refer to https://flutter.dev/to/ios-deploy
+
+Building App Store IPA...                                          28.6s
+✓ Built IPA to build/ios/ipa (35.4MB)
+To upload to the App Store either:
+    1. Drag and drop the "build/ios/ipa/*.ipa" bundle into the Apple Transporter macOS app https://apps.apple.com/us/app/transporter/id1450874784
+    2. Run "xcrun altool --upload-app --type ios -f build/ios/ipa/*.ipa --apiKey your_api_key --apiIssuer your_issuer_id".
+       See "man altool" for details about how to authenticate with the App Store Connect API key.

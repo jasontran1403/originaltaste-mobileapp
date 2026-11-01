@@ -1,0 +1,45 @@
+name: Build Windows EXE
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.5'
+          channel: 'stable'
+          cache: true
+
+      - name: Enable Windows Desktop
+        run: flutter config --enable-windows-desktop
+
+      - name: Install Windows Build Dependencies
+        run: |
+          flutter doctor -v
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build Windows Release
+        run: flutter build windows --release
+
+      - name: Zip Release Folder
+        run: |
+          Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath originaltaste-windows.zip
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: originaltaste-windows
+          path: |
+            originaltaste-windows.zip
+            build/windows/x64/runner/Release/
+          retention-days: 30

@@ -1,0 +1,94 @@
+name: originaltaste
+description: Original Taste - Multi-role POS & Management App
+publish_to: 'none'
+version: 1.0.2+107
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  camera: ^0.11.0
+  google_mlkit_text_recognition: ^0.13.0
+  file_picker: ^8.1.2
+  pdfx: ^2.6.0
+
+  # ── Version app
+  package_info_plus: ^8.0.0
+
+  keyboard_actions: ^4.2.0
+
+  # ── Data export
+  path_provider: ^2.1.2
+  share_plus: ^12.0.1
+  file_saver: ^0.2.12
+  mime: ^1.0.4
+  open_filex: ^4.4.0
+
+  flutter_internet_speed_test_pro: ^1.5.1
+
+  # ── Bill Printer
+  esc_pos_utils_plus: ^2.0.2
+
+  # ── Skeleton
+  shimmer: ^3.0.0
+
+  # ── State Management
+  flutter_riverpod: ^2.5.1
+
+  # ── Navigation
+  go_router: ^14.2.0
+
+  # ── HTTP Client
+  dio: ^5.4.3
+  permission_handler: ^11.3.1
+
+  # ── Charts
+  syncfusion_flutter_charts: ^32.2.9
+  syncfusion_flutter_maps: ^32.2.9
+
+  # ── Storage
+  flutter_secure_storage: ^10.0.0
+  shared_preferences: ^2.3.2
+
+  # ── Image
+  cached_network_image: ^3.4.1
+  image_picker: ^1.1.2
+
+  # ── Video
+  video_player: ^2.9.1
+
+  # ── Format
+  intl: ^0.19.0
+  syncfusion_flutter_datepicker: ^32.2.9
+
+  # ── QR Camera
+  mobile_scanner: ^5.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  web:
+    generate: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/videos/
+    - assets/images/pos/
+    - assets/data/
